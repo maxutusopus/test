@@ -32,6 +32,7 @@ with mongo:
     collection = mongo.connection.arztdata.arzt
     #    arzt = collection.find({'_id': '5729c54ad285a8120c4ef1c5'})
     #    print(arzt)
+    print('Count of rows:{}'.format(collection.count()))
     result = ()
     for i, doc in enumerate(collection.find()):
         # print(i, doc['nachname'])
